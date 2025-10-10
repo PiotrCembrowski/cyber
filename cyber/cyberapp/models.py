@@ -14,3 +14,6 @@ class WarriorClass(models.Model):
     move2 = models.CharField(max_length=64)
     move3 = models.CharField(max_length=64)
     move4 = models.CharField(max_length=64)
+
+    def __str__(self):
+        return (f'ID: {self.id}, name:{self.name}, profession: {self.profession}, level: {self.level}, health: {self.health}, strength: {self.strength} ' )
